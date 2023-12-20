@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/e1fe8e6842.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="no-scroll-layer"></div>
+    <header>
+      <div class="discount-code-section">
+        <p>Use code "XMAS" for a 20% discount at checkout</p>
+        <i class="fas fa-times close-btn"></i>
+      </div>
+      <nav>
+        <span class="logo">Logo</span>
+        <div class="search-container">
+          <i class="fas fa-search"></i>
+          <input
+            class="search-input"
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search"
+          />
+        </div>
+        <i class="fas fa-bars"></i>
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="#">Featured</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">FAQ</a>
+          </li>
+          <li>
+            <div class="shopping-bag-container">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="bag-items">0</span>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <ul class="mobile-menu">
+        <li>
+          <a href="#">Featured</a>
+        </li>
+        <li>
+          <a href="#">Shop</a>
+        </li>
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+      </ul>
+      <div class="shopping-cart-section">
+        <p class="cart-status">You have nothing in your cart</p>
+        <div class="cart-items-container"></div>
+        <div class="subtotal-container">
+          <p class="subtotal">Subtotal</p>
+          <p class="subtotal-amount">$0</p>
+        </div>
+        <button class="go-to-checkout-btn">
+          Proceed to checkout <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+      <div class="header-bg">
+        <h1>Unwrap Joy with Our Spectacular Christmas Sale!</h1>
+        <p>
+          Explore a winter wonderland of discounts on a wide range of products,
+          from dazzling decorations to thoughtful gifts that will warm hearts.
+        </p>
+        <button class="header-btn">
+          Shop Collection <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="filter-container">
+        <form>
+          <legend>Filters</legend>
+          <div class="input-container">
+            <fieldset>
+              <legend>Category</legend>
+              <p>
+                <input
+                  type="checkbox"
+                  name="cookies"
+                  id="cookies"
+                  value="cookies"
+                />
+                <label for="cookies">Cookies</label>
+              </p>
+              <p>
+                <input
+                  type="checkbox"
+                  name="candies"
+                  id="candies"
+                  value="candies"
+                />
+                <label for="candies">Candies</label>
+              </p>
+              <p>
+                <input
+                  type="checkbox"
+                  name="ornaments"
+                  id="ornaments"
+                  value="ornaments"
+                />
+                <label for="ornaments">Ornaments</label>
+              </p>
+              <p>
+                <input
+                  type="checkbox"
+                  name="accessories"
+                  id="accessories"
+                  value="accessories"
+                />
+                <label for="accessories">Accessories</label>
+              </p>
+            </fieldset>
+            <fieldset>
+              <legend>Colors</legend>
+              <p>
+                <input type="checkbox" name="red" id="red" value="red" />
+                <label for="red">Red</label>
+              </p>
+              <p>
+                <input type="checkbox" name="white" id="white" value="white" />
+                <label for="white">White</label>
+              </p>
+              <p>
+                <input type="checkbox" name="green" id="green" value="green" />
+                <label for="green">Green</label>
+              </p>
+              <p>
+                <input type="checkbox" name="brown" id="brown" value="brown" />
+                <label for="brown">Brown</label>
+              </p>
+            </fieldset>
+            <fieldset>
+              <legend>Size</legend>
+              <p>
+                <input type="checkbox" name="small" id="small" value="small" />
+                <label for="small">Small</label>
+              </p>
+              <p>
+                <input
+                  type="checkbox"
+                  name="medium"
+                  id="medium"
+                  value="medium"
+                />
+                <label for="medium">Medium</label>
+              </p>
+              <p>
+                <input type="checkbox" name="large" id="large" value="large" />
+                <label for="large">Large</label>
+              </p>
+            </fieldset>
+          </div>
+        </form>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item green ornaments medium">
+          <div class="image-container">
+            <img
+              class="christmas-tree"
+              src="https://icodethis.com/images/iCodeMas/tree.png"
+              alt="a Christmas tree-shaped decoration"
+            />
+            <span class="label new-label">NEW</span>
+            <div class="layer">
+              <button class="add-btn">
+                Add to cart <i class="fas fa-shopping-bag"></i>
+              </button>
+              <div class="added-to-cart">
+                <p class="notification">Added to cart</p>
+              </div>
+            </div>
+          </div>
+          <p>Christmas Tree Decoration</p>
+          <span class="price">$19.99</span>
+        </div>
+        <div class="grid-item accessories red white large">
+          <div class="image-container">
+            <img
+              src="https://icodethis.com/images/iCodeMas/gift.png"
+              alt="a gift box with a red ribbon"
+            />
+            <span class="label discount-label">-23%</span>
+            <div class="layer">
+              <button class="add-btn">
+                Add to cart <i class="fas fa-shopping-bag"></i>
+              </button>
+              <div class="added-to-cart">
+                <p class="notification">Added to cart</p>
+              </div>
+            </div>
+          </div>
+          <p>Gift Box</p>
+          <div class="discount-price">
+            <span class="price">$9.99</span>
+            <span class="old-price">$12.99</span>
+          </div>
+        </div>
+        <div class="grid-item cookies brown small">
+          <div class="image-container">
+            <img
+              src="https://icodethis.com/images/iCodeMas/gingerbread_cookie.png"
+              alt="a gingerbread man cookie"
+            />
+            <div class="layer">
+              <button class="add-btn">
+                Add to cart <i class="fas fa-shopping-bag"></i>
+              </button>
+              <div class="added-to-cart">
+                <p class="notification">Added to cart</p>
+              </div>
+            </div>
+          </div>
+          <p>Gingerbread Man Cookie</p>
+          <span class="price">$12.99</span>
+        </div>
+        <div class="grid-item ornaments medium">
+          <div class="image-container">
+            <img
+              src="https://icodethis.com/images/iCodeMas/snowflake.png"
+              alt="a snowflake decoration"
+            />
+            <div class="layer">
+              <button class="add-btn">
+                Add to cart <i class="fas fa-shopping-bag"></i>
+              </button>
+              <div class="added-to-cart">
+                <p class="notification">Added to cart</p>
+              </div>
+            </div>
+          </div>
+          <p>Snowflake Decoration</p>
+          <span class="price">$4.99</span>
+        </div>
+        <div class="grid-item cookies brown small">
+          <div class="image-container">
+            <img
+              src="https://icodethis.com/images/iCodeMas/star_cookie.png"
+              alt="a star-shaped cookie"
+            />
+            <div class="layer">
+              <button class="add-btn">
+                Add to cart <i class="fas fa-shopping-bag"></i>
+              </button>
+              <div class="added-to-cart">
+                <p class="notification">Added to cart</p>
+              </div>
+            </div>
+          </div>
+          <p>Star-shaped Cookie</p>
+          <span class="price">$12.99</span>
+        </div>
+        <div class="grid-item accessories red white large">
+          <div class="image-container">
+            <img
+              src="https://icodethis.com/images/iCodeMas/santa_hat.png"
+              alt="Santa's hat"
+            />
+            <div class="layer">
+              <button class="add-btn">
+                Add to cart <i class="fas fa-shopping-bag"></i>
+              </button>
+              <div class="added-to-cart">
+                <p class="notification">Added to cart</p>
+              </div>
+            </div>
+          </div>
+          <p>Santa's Hat</p>
+          <span class="price">$39.99</span>
+        </div>
+        <div class="grid-item candies red white small">
+          <div class="image-container">
+            <img
+              class="candy-cane"
+              src="https://icodethis.com/images/iCodeMas/candy_cane.png"
+              alt="a candy cane"
+            />
+            <div class="layer">
+              <button class="add-btn">
+                Add to cart <i class="fas fa-shopping-bag"></i>
+              </button>
+              <div class="added-to-cart">
+                <p class="notification">Added to cart</p>
+              </div>
+            </div>
+          </div>
+          <p>Candy Cane</p>
+          <span class="price">$8.99</span>
+        </div>
+        <div class="grid-item ornaments white red small">
+          <div class="image-container">
+            <img
+              src="https://icodethis.com/images/iCodeMas/snowman_deco.png"
+              alt="a snowman decoration"
+            />
+            <div class="layer">
+              <button class="add-btn">
+                Add to cart <i class="fas fa-shopping-bag"></i>
+              </button>
+              <div class="added-to-cart">
+                <p class="notification">Added to cart</p>
+              </div>
+            </div>
+          </div>
+          <p>Snowman Decoration</p>
+          <span class="price">$39.99</span>
+        </div>
+        <div class="grid-item ornaments red white medium">
+          <div class="image-container">
+            <img
+              class="christmas-ball"
+              src="https://icodethis.com/images/iCodeMas/christmas_ball.png"
+              alt="a Christmas ball"
+            />
+            <div class="layer">
+              <button class="add-btn">
+                Add to cart <i class="fas fa-shopping-bag"></i>
+              </button>
+              <div class="added-to-cart">
+                <p class="notification">Added to cart</p>
+              </div>
+            </div>
+          </div>
+          <p>Christmas Ball</p>
+          <span class="price">$4.99</span>
+        </div>
+        <div class="grid-item accessories red white large">
+          <div class="image-container">
+            <img
+              class="red-socks"
+              src="https://icodethis.com/images/iCodeMas/christmas_sock.png"
+              alt="Christmas red socks"
+            />
+            <div class="layer">
+              <button class="add-btn">
+                Add to cart <i class="fas fa-shopping-bag"></i>
+              </button>
+              <div class="added-to-cart">
+                <p class="notification">Added to cart</p>
+              </div>
+            </div>
+          </div>
+          <p>Christmas Red Socks</p>
+          <span class="price">$29.99</span>
+        </div>
+        <div class="grid-item accessories red medium">
+          <div class="image-container">
+            <img
+              src="https://icodethis.com/images/iCodeMas/red_ribbon.png"
+              alt="a red ribbon"
+            />
+            <div class="layer">
+              <button class="add-btn">
+                Add to cart <i class="fas fa-shopping-bag"></i>
+              </button>
+              <div class="added-to-cart">
+                <p class="notification">Added to cart</p>
+              </div>
+            </div>
+          </div>
+          <p>Red Ribbon</p>
+          <span class="price">$3.99</span>
+        </div>
+        <div class="grid-item cookies brown small">
+          <div class="image-container">
+            <img
+              src="https://icodethis.com/images/iCodeMas/tree_cookie.png"
+              alt="a Christmas tree cookie"
+            />
+            <div class="layer">
+              <button class="add-btn">
+                Add to cart <i class="fas fa-shopping-bag"></i>
+              </button>
+              <div class="added-to-cart">
+                <p class="notification">Added to cart</p>
+              </div>
+            </div>
+          </div>
+          <p>Christmas Tree Cookie</p>
+          <span class="price">$13.99</span>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
