@@ -1,0 +1,49 @@
+const closeBtn = document.querySelector(".close-btn");
+const header = document.querySelector("header");
+const discountCodeSection = document.querySelector(".discount-code-section");
+const searchContainer = document.querySelector(".search-container");
+const searchIcon = document.querySelector(".fa-search");
+const input = document.querySelector("input");
+const mobileMenuBtn = document.querySelector(".fa-bars");
+const mobileMenu = document.querySelector(".mobile-menu");
+const closeSearchBtn = document.querySelector(".close-search");
+
+// close discount
+closeBtn.addEventListener("click", () => {
+  header.removeChild(discountCodeSection);
+});
+
+// open bar
+searchIcon.addEventListener("click", () => {
+  closeSearchBtn.classList.add("visible");
+  input.classList.add("visible");
+  searchContainer.classList.add("open-search");
+  mobileMenuBtn.classList.remove("visible");
+});
+
+// close bar
+closeSearchBtn.addEventListener("click", () => {
+  closeSearchBtn.classList.remove("visible");
+  input.classList.remove("visible");
+  searchContainer.classList.remove("open-search");
+  mobileMenuBtn.classList.add("visible");
+});
+
+// close mobile menu
+document.body.addEventListener("click", (e) => {
+  if (e.target !== mobileMenu && e.target !== mobileMenuBtn) {
+    mobileMenu.classList.remove("visible-menu");
+  }
+});
+
+// open mobile menu
+mobileMenuBtn.addEventListener("click", () => {
+  mobileMenu.classList.add("visible-menu");
+});
+
+window.addEventListener("resize", () => {
+  mobileMenu.classList.remove("visible-menu");
+  closeSearchBtn.classList.remove("visible");
+  searchContainer.classList.remove("open-search");
+  input.classList.remove("visible");
+});
